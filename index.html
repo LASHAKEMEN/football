@@ -21,6 +21,9 @@
       background-color: #343a40;
       padding: 10px 0;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -39,7 +42,7 @@
     section {
       background-color: white;
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
@@ -49,6 +52,11 @@
       text-align: center;
       padding: 15px 10px;
       font-size: 0.9em;
+    }
+    /* แสดงไฮไลต์เมื่อ Section ถูกคลิกจากเมนู */
+    section:target {
+      border: 2px solid red;
+      background-color: #e9f7ff;
     }
   </style>
 </head>
@@ -84,14 +92,14 @@
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/WlEwA_jPB4k" title="YouTube video" allowfullscreen></iframe>
     </section>
 
-    <!-- ส่วนข้อมูลเกี่ยวกับฟุตบอล -->
+    <!-- เกี่ยวกับฟุตบอล -->
     <section id="football">
       <h2>เกี่ยวกับฟุตบอล</h2>
       <p>ฟุตบอลเป็นกีฬายอดนิยมที่มีผู้ชมและผู้เล่นทั่วโลก การแข่งขันที่สำคัญ เช่น ฟุตบอลโลก, ยูฟ่าแชมเปียนส์ลีก และพรีเมียร์ลีกอังกฤษ ได้รับความสนใจอย่างมากจากแฟนบอลชาวไทยและทั่วโลก</p>
       <p>ทีมชาติไทยก็เป็นหนึ่งในทีมที่มีพัฒนาการที่ดีในภูมิภาคอาเซียน และได้รับความนิยมจากแฟนบอลภายในประเทศ</p>
     </section>
 
-    <!-- ส่วนผู้จัดทำ -->
+    <!-- ผู้จัดทำ -->
     <section id="author">
       <h2>ผู้จัดทำ</h2>
       <p>เว็บไซต์นี้จัดทำโดย <strong>ด.ช.ธีรภัทร</strong> เพื่อเป็นแหล่งรวมข่าวกีฬา ผลการแข่งขัน และวิดีโอไฮไลต์ที่น่าสนใจ</p>
@@ -103,4 +111,3 @@
   </footer>
 </body>
 </html>
-

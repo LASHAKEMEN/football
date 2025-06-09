@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>เว็บไซต์กีฬา</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0; padding: 0;
+      color: #333;
     }
     header {
       background-color: #007bff;
@@ -17,37 +18,44 @@
       text-align: center;
     }
     nav {
-      background-color: #333;
-      padding: 10px;
+      background-color: #343a40;
+      padding: 10px 0;
       text-align: center;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffc107;
     }
     main {
-      padding: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
     }
     section {
       background-color: white;
-      padding: 15px;
+      padding: 20px;
       margin-bottom: 20px;
       border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #222;
+      background-color: #212529;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px 10px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>เว็บไซต์ข่าวกีฬา</h1>
-    <p>อัปเดตข่าวสารและผลการแข่งขันทุกวัน</p>
+    <h1>เว็บไซต์กีฬา</h1>
+    <p>อัปเดตข่าวสารและผลการแข่งขันสดใหม่ทุกวัน</p>
   </header>
 
   <nav>
@@ -65,23 +73,23 @@
     </section>
 
     <section>
-      <h2>ผลการแข่งขัน</h2>
+      <h2>ผลการแข่งขันล่าสุด</h2>
       <ul>
         <li>ไทย 2 - 1 เวียดนาม</li>
         <li>สเปน 3 - 2 บราซิล</li>
-        <li>ลิเวอร์พูล 1 - 1 แมนยู</li>
+        <li>ลิเวอร์พูล 1 - 1 แมนเชสเตอร์ยูไนเต็ด</li>
       </ul>
     </section>
 
     <section>
       <h2>วิดีโอไฮไลต์</h2>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/DWcJFNfaw9c" title="YouTube video" allowfullscreen></iframe>
+      <!-- ตัวอย่าง iframe YouTube ปลอดภัย -->
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 เว็บไซต์กีฬา | พัฒนาโดยคุณเอง</p>
   </footer>
-
 </body>
 </html>

@@ -27,6 +27,7 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      cursor: pointer;
     }
     nav a:hover {
       color: #ffc107;
@@ -51,6 +52,12 @@
       font-size: 0.9em;
     }
   </style>
+  <script>
+    function openAndClose(url) {
+      const newWindow = window.open(url, '_blank');
+      window.close(); // ปิดหน้าปัจจุบัน
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -59,9 +66,9 @@
   </header>
 
   <nav>
-    <a href="#">หน้าหลัก</a>
-    <a href="#football">ฟุตบอล</a>
-    <a href="#author">ผู้จัดทำ</a>
+    <a onclick="location.href='index.html'">หน้าหลัก</a>
+    <a onclick="openAndClose('football.html')">ฟุตบอล</a>
+    <a onclick="openAndClose('author.html')">ผู้จัดทำ</a>
   </nav>
 
   <main>
@@ -83,19 +90,6 @@
       <h2>วิดีโอไฮไลต์</h2>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/WlEwA_jPB4k" title="YouTube video" allowfullscreen></iframe>
     </section>
-
-    <!-- ส่วนข้อมูลเกี่ยวกับฟุตบอล -->
-    <section id="football">
-      <h2>เกี่ยวกับฟุตบอล</h2>
-      <p>ฟุตบอลเป็นกีฬายอดนิยมที่มีผู้ชมและผู้เล่นทั่วโลก การแข่งขันที่สำคัญ เช่น ฟุตบอลโลก, ยูฟ่าแชมเปียนส์ลีก และพรีเมียร์ลีกอังกฤษ ได้รับความสนใจอย่างมากจากแฟนบอลชาวไทยและทั่วโลก</p>
-      <p>ทีมชาติไทยก็เป็นหนึ่งในทีมที่มีพัฒนาการที่ดีในภูมิภาคอาเซียน และได้รับความนิยมจากแฟนบอลภายในประเทศ</p>
-    </section>
-
-    <!-- ส่วนผู้จัดทำ -->
-    <section id="author">
-      <h2>ผู้จัดทำ</h2>
-      <p>เว็บไซต์นี้จัดทำโดย <strong>ด.ช.ธีรภัทร</strong> เพื่อเป็นแหล่งรวมข่าวกีฬา ผลการแข่งขัน และวิดีโอไฮไลต์ที่น่าสนใจ</p>
-    </section>
   </main>
 
   <footer>
@@ -103,3 +97,4 @@
   </footer>
 </body>
 </html>
+

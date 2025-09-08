@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>เว็บไซต์กีฬา</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0; padding: 0;
-      color: #333;
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: #007bff;
@@ -18,108 +17,84 @@
       text-align: center;
     }
     nav {
-      background-color: #343a40;
-      padding: 10px 0;
+      background-color: #333;
+      padding: 10px;
       text-align: center;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    nav a:hover {
-      color: #ffc107;
     }
     main {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 15px;
+      padding: 20px;
     }
     section {
       background-color: white;
-      padding: 20px;
+      padding: 15px;
       margin-bottom: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #212529;
+      background-color: #222;
       color: white;
       text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9em;
+      padding: 10px;
     }
   </style>
-  <script>
-    function showPage(pageId) {
-      // ซ่อนทุกหน้า
-      document.querySelectorAll('.page').forEach(el => el.style.display = 'none');
-      // แสดงหน้าเฉพาะที่เลือก
-      document.getElementById(pageId).style.display = 'block';
-    }
-
-    window.onload = () => {
-      showPage('home'); // เริ่มต้นแสดงหน้าหลัก
-    };
-  </script>
 </head>
 <body>
+
   <header>
-    <h1>เว็บไซต์กีฬา</h1>
-    <p>อัปเดตข่าวสารและผลการแข่งขันสดใหม่ทุกวัน</p>
+    <h1>เว็บไซต์ข่าวกีฬา</h1>
+    <p>อัปเดตข่าวสารและผลการแข่งขันทุกวัน</p>
   </header>
 
   <nav>
-    <a onclick="showPage('home')">หน้าหลัก</a>
-    <a onclick="showPage('football')">ฟุตบอล</a>
-    <a onclick="showPage('author')">ผู้จัดทำ</a>
+    <a href="#">หน้าหลัก</a>
+    <a href="#">ฟุตบอล</a>
+    <a href="#">บาสเกตบอล</a>
+    <a href="#">เทนนิส</a>
+    <a href="#">ติดต่อเรา</a>
   </nav>
 
   <main>
-    <!-- หน้าหลัก -->
-    <div id="home" class="page">
-      <section>
-        <h2>ข่าวล่าสุด</h2>
-        <p>ทีมชาติไทยคว้าชัยในศึกฟุตบอลชิงแชมป์อาเซียน!</p>
-      </section>
+    <section>
+      <h2>กีฬาที่แนะนำ: ฟุตบอล</h2>
+      <p><strong>ฟุตบอล</strong> เป็นกีฬายอดนิยมที่เล่นกันทั่วโลก โดยผู้เล่นจะแบ่งออกเป็น 2 ทีม ทีมละ 11 คน และพยายามทำประตูโดยการเตะลูกบอลเข้าประตูของฝ่ายตรงข้าม</p>
+      <h3>วิธีการเล่นเบื้องต้น:</h3>
+      <ul>
+        <li>ใช้เท้าในการเลี้ยง ส่ง และยิงประตู</li>
+        <li>ห้ามใช้มือ ยกเว้นผู้รักษาประตู</li>
+        <li>ผู้ชนะคือทีมที่ทำประตูได้มากกว่าเมื่อหมดเวลา</li>
+      </ul>
+      <h3>ประโยชน์ของการเล่นฟุตบอล:</h3>
+      <ul>
+        <li>ช่วยเสริมสร้างความแข็งแรงของร่างกาย</li>
+        <li>พัฒนาทักษะการทำงานเป็นทีม</li>
+        <li>ส่งเสริมความมีวินัยและความอดทน</li>
+        <li>ช่วยคลายเครียดและสร้างความสนุกสนาน</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>ผลการแข่งขันล่าสุด</h2>
-        <ul>
-          <li>ไทย 2 - 1 เวียดนาม</li>
-          <li>สเปน 3 - 2 บราซิล</li>
-          <li>ลิเวอร์พูล 1 - 1 แมนเชสเตอร์ยูไนเต็ด</li>
-        </ul>
-      </section>
+    <section>
+      <h2>ผลการแข่งขัน</h2>
+      <ul>
+        <li>ไทย 2 - 1 เวียดนาม</li>
+        <li>สเปน 3 - 2 บราซิล</li>
+        <li>ลิเวอร์พูล 1 - 1 แมนยู</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>วิดีโอไฮไลต์</h2>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WlEwA_jPB4k" title="YouTube video" allowfullscreen></iframe>
-      </section>
-    </div>
-
-    <!-- เกี่ยวกับฟุตบอล -->
-    <div id="football" class="page" style="display:none;">
-      <section>
-        <h2>เกี่ยวกับฟุตบอล</h2>
-        <p>ฟุตบอลเป็นกีฬายอดนิยมที่มีผู้ชมและผู้เล่นทั่วโลก...</p>
-        <p>ทีมชาติไทยก็เป็นหนึ่งในทีมที่มีพัฒนาการที่ดีในภูมิภาคอาเซียน...</p>
-      </section>
-    </div>
-
-    <!-- ผู้จัดทำ -->
-    <div id="author" class="page" style="display:none;">
-      <section>
-        <h2>ผู้จัดทำ</h2>
-        <p>เว็บไซต์นี้จัดทำโดย <strong>ด.ช.ธีรภัทร</strong> เพื่อเป็นแหล่งรวมข่าวกีฬา ผลการแข่งขัน และวิดีโอไฮไลต์ที่น่าสนใจ</p>
-      </section>
-    </div>
+    <section>
+      <h2>วิดีโอไฮไลต์</h2>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/samplevideo" title="YouTube video" allowfullscreen></iframe>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 เว็บไซต์กีฬา | พัฒนาโดย ด.ช.ธีรภัทร</p>
+    <p>&copy; 2025 เว็บไซต์กีฬา | พัฒนาโดย ด.ช.ธีรภัทร ศรีษาคำ ม.1/5 เลขที่ 6</p>
   </footer>
+
 </body>
 </html>

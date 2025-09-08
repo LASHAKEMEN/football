@@ -54,15 +54,14 @@
   </style>
   <script>
     function showPage(pageId) {
-      // ซ่อนทุกหน้า
       document.querySelectorAll('.page').forEach(el => el.style.display = 'none');
-      // แสดงหน้าเฉพาะที่เลือก
-      document.getElementById(pageId).style.display = 'block';
+      const target = document.getElementById(pageId);
+      if (target) target.style.display = 'block';
     }
 
-    window.onload = () => {
-      showPage('home'); // เริ่มต้นแสดงหน้าหลัก
-    };
+    document.addEventListener('DOMContentLoaded', function () {
+      showPage('home'); // แสดงหน้าแรกเมื่อโหลดเสร็จ
+    });
   </script>
 </head>
 <body>
